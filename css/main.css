@@ -10378,7 +10378,7 @@ form .input-error-2:focus {
     height: 1px;
     bottom: 0;
     right: 0;
-    background: #eee;
+    background: #ccc;
 }
 .noPadding{
 	padding:0px;
@@ -10413,7 +10413,7 @@ form .input-error-2:focus {
     top: 0;
     bottom: 0px;
     left: 255px;
-    background: #eee;
+    background: #ccc;
 }
 .experience .experience-info-holder {
     overflow: hidden;
