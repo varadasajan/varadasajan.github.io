@@ -10336,3 +10336,89 @@ form .input-error-2:focus {
     text-align: center;
     padding-top: 80px;
 }
+.experience .experience-date{
+	overflow: hidden;
+    padding-bottom: 20px;
+    text-align: right;
+}
+.experience .experience-date .experience-date-start-month, .experience .experience-date .experience-date-end-month {
+    min-height: 25px;
+}
+.experience .experience-date .experience-date-left, .experience .experience-date .experience-date-right {
+    float: right;
+    text-align: center;
+}
+.experience .experience-date .experience-date-end-year {
+	margin-left:25px;
+}
+.experience .experience-date .experience-date-start-year, .experience .experience-date .experience-date-end-year {
+    min-height: 36px;
+	font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+	text-transform: uppercase;
+}
+.experience .experience-date .experience-date-start-year:before {
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: -19px;
+    width: 10px;
+    height: 5px;
+    background: #2a2b2c;
+}
+.experience .experience-date .experience-date-start-year{
+	color:#2a2b2c;
+	position:relative;
+} 
+.experience .experience-date:before {
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+    background: #eee;
+}
+.noPadding{
+	padding:0px;
+}
+.experience .experience-company {
+    font-size: 18px;
+    line-height: 25px; 
+}
+.experience .experience-position {
+    font-size: 12px;
+    line-height: 25px;
+	text-transform:uppercase;
+}
+.experience .experience-item-wrapper{
+	position:relative;
+	overflow: hidden;
+    padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.experience .experience-item-wrapper .brder {
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    -webkit-transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 0;
+    bottom: 0px;
+    left: 255px;
+    background: #eee;
+}
+.experience .experience-info-holder {
+    overflow: hidden;
+    position: relative;
+    padding: 20px 30px 20px 0;
+    width: 270px;
+    display: table-cell;
+}
