@@ -11,6 +11,7 @@ import './css/Style.css';
 import { Link, animateScroll as scroll } from "react-scroll";
 import emailjs from "emailjs-com";
 import { useRef, useState, useEffect } from "react";
+import { TwitterDMButton } from 'react-twitter-embed';
 
 import Resume from './Resume.pdf'
 function App() { 
@@ -121,7 +122,7 @@ function App() {
               <h2>About Me</h2>
               <span class="subheading blueTxt">Best Candies of creativity</span>
             </header>
-			<div class="col-sm-4">
+			<div class="col-sm-4 wow bounceInLeft">
 				<img src="images/about_me_header.png" class="img-responsive negTopMrgn" />
 			</div>
             <div class="col-sm-8">
@@ -133,7 +134,7 @@ function App() {
              
           </div>
           <div class="row ws-m">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center  wow swing">
               <a href={Resume} download="Varada" target='_blank' title="download resume" class="btn btn-default btn-normal btn-inline costumBtn">download resume <i class="fas fa-download"></i></a>
             
 		 
@@ -516,7 +517,7 @@ function App() {
 
                 <div id="map-canvas" class="footer-map"></div>
 
-                <address class="contact-info-wrapper">
+                <address class="contact-info-wrapper wow pulse ">
                   <ul>
                     
                     <li class="contact-group">
@@ -535,7 +536,11 @@ function App() {
                       <span class="adr-heading">Phone</span>
                       <span class="adr-info">+91 9746 703 864</span>
                     </li>
-                    
+                    <li class="contact-group">
+					<span class="adr-heading">Message via Twitter</span><br/>
+					 <TwitterDMButton id={4125244992} />
+					</li>
+					
                     
                   </ul>                  
                    
@@ -557,10 +562,11 @@ function App() {
               <div class="row">
                 
                 <ul>
-                  <li><a href="#">facebook</a></li>
-                  <li><a href="#">Twitter</a></li>
-                  <li><a href="#">LinkedIn</a></li>
-                  <li><a href="#">Skype</a></li>
+                  <li><a href="https://www.facebook.com/varadapraveendas">facebook</a></li>
+                  <li><a href="https://twitter.com/varadacs">Twitter</a>
+				  </li>
+                  <li><a href="https://www.linkedin.com/in/varadacs/">LinkedIn</a></li>
+				  {/* <li><a href="#">Skype</a></li>*/}
                 </ul>
 
               </div>
