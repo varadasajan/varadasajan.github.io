@@ -2497,6 +2497,7 @@ fieldset[disabled] .form-control:hover {
 .footer-contact .contact-form {
   padding-left: 100px;
   padding-right: 12%;
+  border-top: 1px dashed #ccc;
 }
 
 .footer-contact .contact-form header {
@@ -2568,7 +2569,9 @@ fieldset[disabled] .form-control:hover {
   border-radius: 0;
   background: #fff;
 }
-
+.navbar .navbar-right{
+	  margin-top: 0px!important;
+}
 .navbar .navbar-header {
   width: 27%;
   margin-top: 6px;
@@ -3025,8 +3028,24 @@ fieldset[disabled] .form-control:hover {
 
 .navbar-inverse .navbar-nav li a {
   color: #ececec;
+  cursor:pointer;
 }
-
+.navbar .navbar-nav li a:before{
+	content:'';
+	position: absolute;
+    padding: 2px 50%;
+    background: #1bb4ee;
+    height: 1px;
+    bottom: 0px;
+    left: 2px;
+	opacity:0;
+	transition:all 1s;
+	  -webkit-transition:all 1s;
+	   transition-delay: 0.5s;
+}
+.navbar .navbar-nav li a.active:before{
+	opacity:1;
+}
 .navbar-inverse .navbar-nav li a:hover {
   color: #1bb4ee;
 }
@@ -3142,7 +3161,8 @@ fieldset[disabled] .form-control:hover {
 }
 
 .navbar-small {
-  min-height: 50px;
+    min-height: 67px;
+    padding-top: 10px;
 }
 
 .navbar-small .navbar-header {
@@ -8387,4 +8407,9 @@ form .input-error-2:focus {
     padding: 20px 30px 20px 0;
     width: 270px;
     display: table-cell;
+}
+@media only screen and (max-width: 932px) {
+  .navbar .navbar-right {
+    width: 90%;
+  }
 }

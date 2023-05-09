@@ -483,7 +483,32 @@ function App() {
           <div class="container-fluid">
             <div class="row">
 
-             
+              <div class="col-lg-6 no-gap section contact-form">
+                <header class="sec-heading">
+                  <h2>Contact Me</h2>
+                  <span class="subheading">Send me a message</span>
+				  <span className={msgStatus=='1'?'greenTxt':'redTxt'}>{contactmsg}</span>
+				  <form ref={form} onSubmit={sendMail}>
+				  <div class="form-group">
+					<label for="name">Name*:</label>
+					<input type="text" class="form-control" id="name" name="user_name"  required />
+				  </div>
+				   <div class="form-group">
+					<label for="email">Email address*:</label>
+					<input type="email" class="form-control" id="email" name="user_email" required />
+				  </div>
+				  <div class="form-group">
+					<label for="message">Message*:</label>
+					<textarea class="form-control" id="message" name="message" required></textarea>
+				  </div>
+				  <div class="form-group">
+				  <input type="submit" value="send" class="btn btn-default btn-normal btn-inline costumBtn" disabled={msgStatus=='0'?true:false}/>
+				  </div>
+				  </form>
+                </header>
+
+                
+              </div>
               <div class="col-lg-6 no-gap contact-info">
 
                 
@@ -520,32 +545,7 @@ function App() {
 
 
               
-              <div class="col-lg-6 no-gap section contact-form">
-                <header class="sec-heading">
-                  <h2>Contact Me</h2>
-                  <span class="subheading">Send me a message</span>
-				  <span className={msgStatus=='1'?'greenTxt':'redTxt'}>{contactmsg}</span>
-				  <form ref={form} onSubmit={sendMail}>
-				  <div class="form-group">
-					<label for="name">Name*:</label>
-					<input type="text" class="form-control" id="name" name="user_name"  required />
-				  </div>
-				   <div class="form-group">
-					<label for="email">Email address*:</label>
-					<input type="email" class="form-control" id="email" name="user_email" required />
-				  </div>
-				  <div class="form-group">
-					<label for="message">Message*:</label>
-					<textarea class="form-control" id="message" name="message" required></textarea>
-				  </div>
-				  <div class="form-group">
-				  <input type="submit" value="send" class="btn btn-default btn-normal btn-inline costumBtn" disabled={msgStatus=='0'?true:false}/>
-				  </div>
-				  </form>
-                </header>
-
-                
-              </div>
+             
 
             </div>
           </div>
