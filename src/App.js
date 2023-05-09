@@ -318,12 +318,12 @@ function App() {
 				<div class="experience-info-holder col-sm-3 noPadding wow slideInRight">
 					<div class="experience-date">
 						<div class="experience-date-right pull-right">
-							<div class="experience-date-end-month">February </div>
-							<div class="experience-date-end-year blueTxt ">2012</div>
+							<div class="experience-date-end-month">March </div>
+							<div class="experience-date-end-year blueTxt ">2013</div>
 						</div>
 						<div class="experience-date-left pull-right">
-							<div class="experience-date-start-month">March</div>
-							<div class="experience-date-start-year ">2013</div>
+							<div class="experience-date-start-month">February</div>
+							<div class="experience-date-start-year ">2012</div>
 						</div>
 					</div>
 					<div class="experience-company text-right blueTxt">WDS Technologies</div>
