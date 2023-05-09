@@ -1,0 +1,1 @@
+document.addEventListener('load', function(){ alert(42) } );
